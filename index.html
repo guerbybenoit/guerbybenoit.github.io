@@ -2,188 +2,836 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="shortcut icon" type="image/x-icon" href="./images/moi.jpg">
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
-    <title>Mon CV en ligne</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio personnel</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/avatar.png" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <header class="header">
-        <div class="wrapper">
-            <div class="header_content">
-                <h1>Guerby BENOÎT</h1>
-                <div class="subtitle">
-                    <nav class="menu">
-                        <div class="inner">
-                            <div class="m-right">
-                                <a href="#" class="m-link">Accueil</a>
-                                <a href="#parcours" class="m-link">Expérience</a>
-                                <a href="#recommandation" class="m-link">Travaux</a>
-                                <a href="mailto:benoitguerby@gmail.com" class="m-link">Contact</a>
-                            </div>
-                        </div>
-                    </nav>
-                </div>
-            </div>
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/avatar.png" alt="Guerby BENOIT" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Guerby BENOIT">Guerby BENOIT</h1>
+
+          <p class="title">Développeur web / mobile</p>
         </div>
-    </header>
 
-    <main>
-        <article>
-            <section id="presentation">
-                <h1>Qui suis-je ?</h1>
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
 
-                <div class="sec">
-                    <div class="left">
-                        <img src="./images/me.jpg" alt="Ma photo">
-                    </div>
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
 
-                    <div class="right">
-                        <p>Je m'appelle Guerby BENOÎT et je vis à Port-au-Prince.</p>
-                        <p>Je suis étudiant finissant en Sciences Informatiques.</p>
-                        <p>J'adore l'informatique, je m'oriente beaucoup plus vers la programmation.</p>
-                        <p>J'ai déjà réalisé quelques projets dans le domaine.</p>
-                        <p>Parcourez mon site pour que vous puissiez me connaître un peu et voir quelques uns des projets que j'ai déjà réalisé.</p>
-                    </div>
-                </div>
-            </section>
+      </div>
 
-            <section id="parcours">
-                <h1>Parcours et expériences</h1>
+      <div class="sidebar-info_more">
 
-                <div class="sec">
-                    <h2>Expériences professionnelles</h2>
+        <div class="separator"></div>
 
-                    <div class="exp">
-                        <div class="left">
-                            <h3>2020</h3>
-                        </div>
+        <ul class="contacts-list">
 
-                        <div class="right">
-                            <h3>Créateur - Jagon Enfòmatik</h3>
+          <li class="contact-item">
 
-                            <p>Créateur de l'application mobile <a href="https://play.google.com/store/apps/details?id=ht.jargon.informatique">
-                                    Jagon Enfòmatik</a> disponible sur PlayStore.</p>
-                        </div>
-                        
-                        <div class="exp">
-                            <div class="left">
-                                <h3>2021</h3>
-                            </div>
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
 
-                            <div class="right">
-                                <h3>Créateur - Quiz Java</h3>
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
 
-                                <p>Créateur de l'application mobile <a href="https://play.google.com/store/apps/details?id=fr.java.quiz">
-                                    Quiz Java</a> disponible sur PlayStore.</p>
-                            </div>
-                        </div>
-                    </div>
+              <a href="mailto:guerby.benoit.1@ulaval.ca" class="contact-link">guerby.benoit.1@ulaval.ca</a>
+            </div>
 
-                    <h2>Parcours scolaire</h2>
+          </li>
 
-                    <div class="exp">
-                        <div class="left">
-                            <h3>2017</h3>
-                        </div>
+          <li class="contact-item">
 
-                        <div class="right">
-                            <h3>Université</h3>
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
 
-                            <p>Début de mes études en sciences informatiques.</p>
-                        </div>
-                    </div>
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
 
-                </div>
-            </section>
+              <a href="tel:+13673836015" class="contact-link">+1 (367) 383-6015</a>
+            </div>
 
-            <section id="competences">
-                <table>
-                    <caption>
-                        <h1>Compétences et Niveau</h1>
-                    </caption>
-                    <tr>
-                        <th>Compétences</th>
-                        <th>Niveau</th>
-                    </tr>
+          </li>
 
-                    <tr>
-                        <td>HTML / CSS</td>
-                        <td>AVANCÉ</td>
-                    </tr>
+          <li class="contact-item">
 
-                    <tr>
-                        <td>JAVA</td>
-                        <td>AVANCÉ</td>
-                    </tr>
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
 
-                    <tr>
-                        <td>ANDROID</td>
-                        <td>MOYEN</td>
-                    </tr>
-                </table>
-            </section>
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
 
-            <section id="recommandation">
-                <h1>Quelques uns de mes travaux personnels</h1>
+              <time datetime="12-05">December 05</time>
+            </div>
 
-                <div class="sec">
-                    <div class="reco">
-                        <h2>Guide et Astuces</h2>
+          </li>
 
-                        <div class="left">
-                            <a href="./images/guide_home.png" target="_blank" title="Cliquez pour voir l'image">
-                                <img src="./images/guide_home.png" alt="beepad">
-                            </a>
-                            <a href="./images/guide_astuces.png" target="_blank" title="Cliquez pour voir l'image">
-                                <img src="./images/guide_astuces.png" alt="beepad">
-                            </a>
-                        </div>
+          <li class="contact-item">
 
-                        <div class="right">
-                            <p>"Une application mobile pour android que je suis en train de développer pour partager
-                                des astuces qui permettront de mieux manipuler un ordinateur."</p>
-                        </div>
-                    </div>
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
 
-                    <div class="reco">
-                        <h2>Jagon Enfòmatik</h2>
+            <div class="contact-info">
+              <p class="contact-title">Adresse</p>
 
-                        <div class="left">
-                            <a href="./images/jagon_store.png" target="_blank" title="Cliquez pour voir l'image">
-                                <img src="./images/jagon_store.png" alt="web">
-                            </a>
-                            <a href="./images/jagon_app.png" target="_blank" title="Cliquez ici pour voir l'image">
-                                <img src="./images/jagon_app.png" alt="web">
-                            </a>
-                        </div>
+              <address>Ville de Québec, Québec, Canada</address>
+            </div>
 
-                        <div class="right">
-                            <p>
-                                "Une application mobile pour android que j'ai créé pour expliquer des thèmes dans le
-                                jargon informatique en créole Haïtien.Elle est déjà disponible sur le PlayStore.
-                                <a href="https://play.google.com/store/apps/details?id=ht.jargon.informatique">
-                                    Cliquez ici pour la télécharger</a>"
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </article>
-    </main>
+          </li>
 
-    <footer>
-        <p>
-            <a href="https://www.facebook.com/guerby.benoit"><img src="./images/facebook_icon.png" alt="Facebook" /></a>
-            <a href="https://www.youtube.com/channel/UCA3NM3rP9b1blq75Wp7UFMg?disable_polymer=true"><img src="./images/youtube_icon.png" alt="YouTube" /></a>
-            <a href="https://www.instagram.com/splinter_mouss"><img src="./images/Instagram_icon.png" alt="Instagram" /></a>
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.facebook.com/guerby.benoit/" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/guerbybenoit/" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.instagram.com/splinter_mouss/" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/guerby-benoit/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+        <p class="blog-text">
+          Auteur du design:
+          <a href="https://github.com/codewithsadee" class="social-link">
+            <ion-icon name="logo-github"></ion-icon>
+          </a>
         </p>
-        <p>Développé par Guerby BENOÎT</p>
-    </footer>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>À propos</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">À propos de moi</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            Je suis étudiant en 2ème année en génie logiciel à l'Université Laval. Passionné par la
+            technologie et l'innovation, je m'intéresse particulièrement à l'intelligence artificielle, au
+            développement web et mobile. Mon objectif est d'intégrer une entreprise dynamique où je pourrai appliquer
+            mes compétences et apprendre davantage.
+            Je recherche activement un stage ou un premier emploi dans des secteurs liés à l'IA, au développement
+            logiciel ou aux technologies du cloud. Je suis rigoureux, curieux, et motivé pour relever des défis
+            complexes. Découvrez mon parcours, mes compétences et mes projets en génie logiciel. Prêt à relever des
+            défis technologiques et à contribuer à des entreprises innovantes.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">Ce que je fais</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web design</h4>
+
+                <p class="service-item-text">
+                  Je concois des designs modernes pour les sites web avec Figma.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Développement Web</h4>
+
+                <p class="service-item-text">
+                  Je développe des sites web modernes et réactifs avec HTML, CSS et JavaScript avec utilisation des
+                  frameworks tels que VueJS, NodeJS et Flask.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Mobile apps</h4>
+
+                <p class="service-item-text">
+                  Je développe des applications mobiles modernes et réactives pour Android avec Kotlin et Flutter.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Éducation</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Université Laval</h4>
+
+              <span>septembre 2023 — en cours</span>
+
+              <p class="timeline-text">
+                Étudiant en Génie Logiciel, je me spécialise dans le développement web, mobile et l'administration de
+                base de données. J'ai acquis des compétences
+                solides en programmation, en conception d'applications et en gestion de projets. Je suis passionné par
+                l'innovation technologique et je m'efforce de rester à jour avec les dernières tendances du secteur.
+                Mon objectif est de contribuer à des projets stimulants et d'apprendre continuellement dans un
+                environnement dynamique.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Université INUKA</h4>
+
+              <span>octobre 2017 — décembre 2021</span>
+
+              <p class="timeline-text">
+                J'ai étudié l'informatique de gestion à l'Université INUKA, où j'ai acquis des compétences solides en
+                développement de logiciels web et mobile, en gestion de bases de données et en analyse de systèmes. J'ai
+                également
+                participé à des projets pratiques qui m'ont permis de mettre en pratique mes connaissances théoriques.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Expérience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Technicien financier - National Télécom S.A (NATCOM), Port-au-Prince
+              </h4>
+
+              <span>juillet 2023 — août 2023</span>
+
+              <br>
+
+              <ol class="timeline-list">
+
+                <li class="timeline-item">
+
+                  <p class="timeline-text">
+                    Recherche quotidienne d'erreurs, de risques, de fuites et résolution des problèmes sur le système
+                    avec l'équipe commerciale.
+                  </p>
+
+                </li>
+
+                <li class="timeline-item">
+
+                  <p class="timeline-text">
+                    Suivre l'équipe partenaire du logiciel Vietnamien pour terminer le développement de nouvelles
+                    fonctions, le cas échéant, et corriger les erreurs de fonction.
+                  </p>
+
+                </li>
+
+                <li class="timeline-item">
+
+                  <p class="timeline-text">
+                    Journal de suivi pour résoudre tous les problèmes et questions découlant du canal et du client.
+                  </p>
+
+                </li>
+              </ol>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Jagon Enfòmatik - Projet personnel d’une application mobile de
+                dictionnaire</h4>
+
+              <span>Publiée en juin 2020</span>
+
+              <p class="timeline-text">
+                Conception d'une application mobile pour Android pour expliquer certains termes dans le jargon
+                informatique en créole Haïtien développée avec Java et SQLite. Dernière mise à jour en août 2024 avec
+                Flutter. L'application est disponible sur le Play Store.
+                <a href="https://play.google.com/store/apps/details?id=ht.jargon.informatique" target="_blank"
+                  rel="noopener noreferrer">Jagon Enfòmatik</a>
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Quiz Java - Projet personnel d’une application mobile de quiz</h4>
+
+              <span>Publiée en décembre 2021 (Non disponible)</span>
+
+              <p class="timeline-text">
+                Conception d'une application mobile pour Android qui permet de tester ses connaissances en Java tout en
+                jouant, développée avec Kotlin.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">Mes compétences techniques</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Java</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Kotlin</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Python</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">C++</h5>
+                <data value="75">75%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 75%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">JavaScript</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Flutter</h5>
+                <data value="75">75%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 75%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">NodeJS</h5>
+                <data value="65">65%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 65%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Flask</h5>
+                <data value="60">60%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 60%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">VueJS</h5>
+                <data value="50">50%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 50%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">MySQL</h5>
+                <data value="75">75%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 75%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">MongoDB</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Oracle</h5>
+                <data value="50">50%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 50%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Git</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+      <!--
+        - #BLOG
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="https://play.google.com/store/apps/details?id=ht.jargon.informatique">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/logo_jagon_enfomatik.png" alt="Design conferences in 2022" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Jagon Enfòmatik</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Juin 2020</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Application mobile pour android</h3>
+
+                  <p class="blog-text">
+                    Conception d'une application mobile pour Android pour expliquer certains termes dans le jargon
+                    informatique en créole Haïtien développée avec Java et SQLite. Dernière mise à jour en août 2024
+                    avec Flutter. L'application est disponible sur le Play Store.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/UFood.png" alt="Best fonts every designer" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">UFood Restaurant</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Hiver 2025</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Projet de développement web Hiver 2025</h3>
+
+                  <p class="blog-text">
+                    Ce projet de session pour le cours de Développement Web (GLO-3102) à
+                    l'Université Laval, session Hiver 2025, consiste à développer une application permettant de trouver
+                    des restaurants et de partager ses favoris entre amis.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/TournoiPedia.png" alt="Design digest #80" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Tourni Pedia</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Hiver 2025</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Projet de base de données Hiver 2025</h3>
+
+                  <p class="blog-text">
+                    Ce projet de session pour le cours de Modèles et langage de base de données
+                    pour l'ingénierie (GLO-2005) à l'Université Laval, session Hiver 2025,
+                    consiste à développer une application permettant de gérer des tournois.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/CAFN_SAFN.png" alt="UI interactions of the week" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">CAFN - SAFN</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Été 2025</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Projet personnel techno-éducatif</h3>
+
+                  <p class="blog-text">
+                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12660.79343787758!2d-71.34587959999995!3d46.86372470000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sfr!2sca!4v1746638938247!5m2!1sfr!2sca"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Forme de contact</h3>
+
+          <p class="blog-text">
+            Pour toute demande ou proposition de collaboration, n'hésitez pas à me contacter via ce formulaire ou par
+            email.
+          </p>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Nom complet" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Adresse courriel" required
+                data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Votre message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
 
